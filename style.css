@@ -213,9 +213,7 @@ button {
   opacity: 0.1;
 }
 
-
 /*--------------home--------*/
-/*--------------book--------*/
 
 .top {
   margin-top: 27%;
@@ -649,9 +647,6 @@ footer {
   .box{
     margin-top:20%;
   }
-  .right{
-    margin-top: 35rem;
-  }
   .image1,
   .image2{
     display: none;
@@ -667,12 +662,9 @@ footer {
   .contact-container button{
     margin-top: -20px;
   }
-  .top{
-    margin-top: 15%;
-  }
   .about{
     display: grid;
-    margin-block:30px;
+    /* margin:-20px 0px 30px; */
   }
   #teambtn,
   #tBtn{
@@ -699,9 +691,14 @@ footer {
   .about .container,
   .book .container {
     flex-direction: column;
+  }.left{
+    display: none;
   }
  .left, .right {
     width: 100%;
+  }
+  .right{
+    margin-top: 80%;
   }
   .wrapper .text,
   .wrap .contact-container {
@@ -721,7 +718,7 @@ footer {
     grid-template-columns: repeat(1, 1fr);
   }
   .home .text {
-    margin: 35% 0 0 0;
+    margin: 45% 0 0 0;
   }
   .home h1 {
     font-size: 40px;
@@ -739,13 +736,13 @@ footer {
     padding:45px 25px 30px;
   }
 
-  .heading_top {
+  /* .heading_top {
     margin-top: 100px;
   }
 
   .heading_top button {
     display: none;
-  }
+  } */
   .restaurant .flex {
     flex-direction: column-reverse;
   }
