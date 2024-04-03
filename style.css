@@ -667,6 +667,9 @@ footer {
   .contact-container button{
     margin-top: -20px;
   }
+  .top{
+    margin-top: 15%;
+  }
   .about{
     display: grid;
     margin-block:30px;
