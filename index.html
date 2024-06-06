@@ -41,9 +41,9 @@
           <div class="dropdown">
             <button class="dropbtn" onclick="toggleDropdown()">Products</button>
             <div class="dropdown-content nav-link">
-              <a href="#products" class="nav-link">Poultry</a>
-              <a href="#products" class="nav-link">Mushroom</a>
-              <a href="#products" class="nav-link">Albino Rat</a>
+              <a href="./poulty.html" class="nav-link">Poultry</a>
+              <a href="./product.html" class="nav-link">Mushroom</a>
+              <a href="./albino.html" class="nav-link">Albino Rat</a>
             </div>
           </div>
           </li>
@@ -106,7 +106,7 @@
            </section>
 
   
-  <section class="wrapper  service" id="services">
+  <section class="wrapper service" id="services">
     <div class="container">
       <div class="text">
         <h2>Our Services</h2>
@@ -188,7 +188,7 @@
             <div class="accordionItemContent">
               <p> Our hand-picked mushrooms aren't just delicious; they're also packed with nutrients and versatile in the kitchen. From adding depth to soups and stews to being the star ingredient in vegetarian dishes, mushrooms elevate your meals while offering numerous health benefits.
                 <button class="btnr">
-                  <a href="#" target="_blank" >View product</a>
+                  <a href="./product.html" target="_blank" >View product</a>
                    </button>
               </p>
             </div>
@@ -198,7 +198,7 @@
             <div class="accordionItemContent">
               <p> Enjoy more than just fresh eggs with our poultry products. Our free-range chickens provide lean, flavorful meat that's perfect for a variety of dishes. Whether you're grilling, roasting, or frying, our poultry is a wholesome source of protein.
              <button class="btnr">
-             <a href="#" target="_blank" >View product</a>
+             <a href="./poulty.html" target="_blank" >View product</a>
             </button>
               </p>
             </div>
@@ -208,7 +208,7 @@
             <div class="accordionItemContent">
               <p> Beyond their adorable appearance, albino rats offer companionship and joy to those seeking unique pets. Known for their intelligence and affectionate nature, these rats quickly become cherished members of the family. 
                <button class="btnr">
-                <a href="#" target="_blank" >View product</a>
+                <a href="./albino.html" target="_blank" >View product</a>
                    </button>
               </p>
             </div>
@@ -234,9 +234,11 @@
             
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
-            
-            <button type="submit">Send</button>
+            <button>
+              <a id="whatsappLink" href="#" class="whatsapp-button" onclick="updateWhatsAppLink()">Contact Us via WhatsApp</a>
+         </button>
         </form>
+    </div>
     </div>
   </section>
 

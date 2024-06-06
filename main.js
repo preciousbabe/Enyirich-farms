@@ -103,3 +103,16 @@ function scrollFunction() {
     document.body.scrollTop = 0; 
     document.documentElement.scrollTop = 0; 
   }
+
+  // whatsapp
+  function updateWhatsAppLink() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    const whatsappMessage = `Hello, my name is ${name}. My email is ${email}. I have the following question: ${message}`;
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+
+    const whatsappLink = `https://wa.me/1234567890?text=${encodedMessage}`;
+    document.getElementById('whatsappLink').href = whatsappLink;
+}

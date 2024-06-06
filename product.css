@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'roboto', sans-serif;
+    letter-spacing: 0.02em;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
+}
+
+.product-container {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    height: 750px;
+}
+
+.product-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-image img {
+    width: 100%;
+    height:auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.product-details {
+    font-size: 18px;
+}
+
+.product-description {
+    line-height: 1.6rem;
+    margin-bottom: 12px;
+}
+
+.product-price {
+    font-size: 22px;
+    color: #e60000;
+    margin-bottom: 20px;
+}
+
+.buy-now {
+    background-color: #e60000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    text-decoration: none;
+}
+  h1{
+    color: #cc0000;
+  }
+.buy-now:hover {
+    background-color: #cc0000;
+}

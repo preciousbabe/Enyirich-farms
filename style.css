@@ -386,7 +386,7 @@ button {
 /*--------------room--------*/
 /*--------------restaurant--------*/
 .restaurant{
-  margin-top:10%;
+  margin-block:10%;
 }
 .restaurant img{
   height: 100%;
@@ -506,6 +506,9 @@ button {
 .contact-container button:hover {
   background-color: #45a049;
 } 
+.whatsapp-button{
+  color: #fff;
+}
 
 /* footer */
 footer {
@@ -657,7 +660,10 @@ footer {
   .wrapper,
   .wrap{
     margin-top:100px;
-    height: 400px;
+    height: 520px;
+  }
+  .service{
+    padding-bottom:20px;
   }
   .contact-container button{
     margin-top: -20px;
@@ -672,7 +678,7 @@ footer {
     margin: 10px auto;
   }
   .room{
-    margin-top:190px;
+    margin-top:140px;
   }
   .room h2{
     margin-bottom: -3rem;
