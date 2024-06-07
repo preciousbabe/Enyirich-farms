@@ -105,7 +105,23 @@ function scrollFunction() {
   }
 
   // whatsapp
-  function updateWhatsAppLink() {
+  function validateForm(event) {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    const errorMessage = document.getElementById('error-message');
+
+    if (name === "" || email === "" || message === "") {
+        errorMessage.textContent = "Please fill out all fields.";
+        event.preventDefault(); // Prevent form submission or link navigation
+        return false;
+    }
+
+    updateWhatsAppLink();
+    return true;
+}
+
+function updateWhatsAppLink() {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
@@ -115,4 +131,15 @@ function scrollFunction() {
 
     const whatsappLink = `https://wa.me/1234567890?text=${encodedMessage}`;
     document.getElementById('whatsappLink').href = whatsappLink;
+}
+
+
+// productwhatsapp
+function PupdateWhatsAppLink() {
+  const quantity = document.getElementById('quantity').value;
+  const price = priceElement.getAttribute('data-price');
+  const totalPrice = price * quantity;
+  const message = `I'm interested in buying ${quantity} Albino Rat${quantity > 1 ? 's' : ''} for ${totalPrice}NGN`;
+  const whatsappLink = `https://wa.me/08068518634?text=${encodeURIComponent(message)}`;
+  document.getElementById('buyNowLink').href = whatsappLink;
 }

@@ -13,58 +13,80 @@
             <div class="product-image">
                 <img src="./Sir Emeka/1kgmushroom.jpg" alt="Mushroom Product 1 Image">
             </div>
-            <div class="product-details">
+            <div class="product-details" data-price="3000">
                 <h1 class="product-title">1Kg Of Fresh Mushroom</h1>
                 <p class="product-description">Enjoy the rich, earthy flavor of 1kg fresh mushrooms, perfect for enhancing any dish with gourmet quality. Harvested daily to ensure peak freshness!</p>
                 <p class="product-price">3,000NGN</p>
-                <a href="https://wa.me/08068518634?text=I'm%20interested%20in%20buying%201kg%20Fresh%20Mushroom%20for%203,000NGN" class="buy-now">Buy Now</a>
+                <label for="quantity1">Quantity:</label>
+                <input type="number" id="quantity1" class="quantity-input" value="1" min="1" onchange="updateWhatsAppLink(1, 'Kg of Fresh Mushroom')">
+                <a id="buyNowLink1" href="https://wa.me/08068518634?text=I'm interested in buying 1Kg of Fresh Mushroom for 3,000NGN" class="buy-now">Buy Now</a>
             </div>
         </div>
         <div class="product-container">
             <div class="product-image">
                 <img src="./Sir Emeka/1bottlemushspawn.jpg" alt="Mushroom Product 2 Image">
             </div>
-            <div class="product-details">
+            <div class="product-details" data-price="1300">
                 <h1 class="product-title">1 Bottle Of Mushroom Seed/Spawn</h1>
                 <p class="product-description">Grow your own gourmet mushrooms with ease using our premium mushroom seed/spawn. Ideal for home growers seeking fresh, organic produce.</p>
                 <p class="product-price">1,300NGN</p>
-                <a href="https://wa.me/08068518634?text=I'm%20interested%20in%20buying%201%20bottle%20of%20Mushroom%20%20spawn%20for%201,300NGN" class="buy-now">Buy Now</a>
+                <label for="quantity2">Quantity:</label>
+                <input type="number" id="quantity2" class="quantity-input" value="1" min="1" onchange="updateWhatsAppLink(2, 'Bottle of Mushroom Seed/Spawn')">
+                <a id="buyNowLink2" href="https://wa.me/08068518634?text=I'm interested in buying 1 Bottle of Mushroom Seed/Spawn for 1,300NGN" class="buy-now">Buy Now</a>
             </div>
         </div>
         <div class="product-container">
             <div class="product-image">
                 <img src="./Sir Emeka/coloo.png" alt="Mushroom Product 3 Image">
             </div>
-            <div class="product-details">
+            <div class="product-details" data-price="700">
                 <h1 class="product-title">1Kg Bag Of Fully Colonized Substrate</h1>
                 <p class="product-description">Kickstart your mushroom cultivation with our 1kg bag of fully colonized substrate. Guaranteed to yield robust, healthy mushrooms quickly!</p>
                 <p class="product-price">700NGN</p>
-                <a href="https://wa.me/08068518634?text=I'm%20interested%20in%20buying%201kg%20bag%20%20of%20fully%20colonized%20Mushroom%20for%20700NGN" class="buy-now">Buy Now</a>
+                <label for="quantity3">Quantity:</label>
+                <input type="number" id="quantity3" class="quantity-input" value="1" min="1" onchange="updateWhatsAppLink(3, 'Kg Bag of Fully Colonized Substrate')">
+                <a id="buyNowLink3" href="https://wa.me/08068518634?text=I'm interested in buying 1Kg Bag of Fully Colonized Substrate for 700NGN" class="buy-now">Buy Now</a>
             </div>
         </div>
         <div class="product-container">
             <div class="product-image">
                 <img src="./Sir Emeka/1bagmushspawn.jpg" alt="Mushroom Product 4 Image">
             </div>
-            <div class="product-details">
+            <div class="product-details" data-price="3500">
                 <h1 class="product-title">1 Bag Of Mushroom Seed/Spawn</h1>
                 <p class="product-description">Unlock the secret to homegrown mushrooms with our high-quality mushroom seed/spawn. Easy to use and perfect for beginners and experts alike.</p>
-                <p class="product-price">3500NGN</p>
-                <a href="https://wa.me/08068518634?text=I'm%20interested%20in%20buying%201%20bag%20of%20Mushroom%20spawn%20for%203,500NGN" class="buy-now">Buy Now</a>
+                <p class="product-price">3,500NGN</p>
+                <label for="quantity4">Quantity:</label>
+                <input type="number" id="quantity4" class="quantity-input" value="1" min="1" onchange="updateWhatsAppLink(4, 'Bag of Mushroom Seed/Spawn')">
+                <a id="buyNowLink4" href="https://wa.me/08068518634?text=I'm interested in buying 1 Bag of Mushroom Seed/Spawn for 3,500NGN" class="buy-now">Buy Now</a>
             </div>
         </div>
         <div class="product-container">
             <div class="product-image">
                 <img src="./Sir Emeka/100gradrymush.jpg" alt="Mushroom Product 5 Image">
             </div>
-            <div class="product-details">
+            <div class="product-details" data-price="3000">
                 <h1 class="product-title">100grams Of Dried Mushroom</h1>
                 <p class="product-description">Savor the intense, umami-rich flavor of our 100g dried mushrooms. Perfect for soups, stews, and gourmet cooking. A pantry essential for every chef!</p>
-                <p class="product-price">3000NGN</p>
-                <a href="https://wa.me/08068518634?text=I'm%20interested%20in%20buying%20100grams%20of%20%20dried%20Mushroom%20for%203,000NGN" class="buy-now">Buy Now</a>
+                <p class="product-price">3,000NGN</p>
+                <label for="quantity5">Quantity:</label>
+                <input type="number" id="quantity5" class="quantity-input" value="1" min="1" onchange="updateWhatsAppLink(5, '00grams of Dried Mushroom')">
+                <a id="buyNowLink5" href="https://wa.me/08068518634?text=I'm interested in buying  100grams of Dried Mushroom for 3,000NGN" class="buy-now">Buy Now</a>
             </div>
         </div>
-        <!-- Add more product containers as needed -->
     </div>
+
+    <script>
+        function updateWhatsAppLink(productNumber, productName) {
+            const quantityInput = document.getElementById('quantity' + productNumber);
+            const quantity = quantityInput.value;
+            const priceElement = quantityInput.closest('.product-details');
+            const price = parseFloat(priceElement.getAttribute('data-price')); 
+            const totalPrice = price * quantity;
+            const message = `I'm interested in buying ${quantity} ${productName}${quantity > 1 ? 's' : ''} for ${totalPrice.toLocaleString()}NGN`;
+            const whatsappLink = `https://wa.me/08068518634?text=${encodeURIComponent(message)}`;
+            document.getElementById('buyNowLink' + productNumber).href = whatsappLink;
+        }
+    </script>
 </body>
 </html>
