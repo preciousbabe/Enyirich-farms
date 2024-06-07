@@ -19,7 +19,7 @@
                 <p class="product-price">3,000NGN</p>
                 <label for="quantity1">Quantity:</label>
                 <input type="number" id="quantity1" class="quantity-input" value="1" min="1" onchange="updateWhatsAppLink(1, 'Kg of Fresh Mushroom')">
-                <a id="buyNowLink1" href="https://wa.me/08068518634?text=I'm interested in buying 1Kg of Fresh Mushroom for 3,000NGN" class="buy-now">Buy Now</a>
+                <a id="buyNowLink1" href="https://wa.me/+2348068518634?text=I'm interested in buying 1Kg of Fresh Mushroom for 3,000NGN" class="buy-now">Buy Now</a>
             </div>
         </div>
         <div class="product-container">
@@ -32,7 +32,7 @@
                 <p class="product-price">1,300NGN</p>
                 <label for="quantity2">Quantity:</label>
                 <input type="number" id="quantity2" class="quantity-input" value="1" min="1" onchange="updateWhatsAppLink(2, 'Bottle of Mushroom Seed/Spawn')">
-                <a id="buyNowLink2" href="https://wa.me/08068518634?text=I'm interested in buying 1 Bottle of Mushroom Seed/Spawn for 1,300NGN" class="buy-now">Buy Now</a>
+                <a id="buyNowLink2" href="https://wa.me/+2348068518634?text=I'm interested in buying 1 Bottle of Mushroom Seed/Spawn for 1,300NGN" class="buy-now">Buy Now</a>
             </div>
         </div>
         <div class="product-container">
@@ -45,7 +45,7 @@
                 <p class="product-price">700NGN</p>
                 <label for="quantity3">Quantity:</label>
                 <input type="number" id="quantity3" class="quantity-input" value="1" min="1" onchange="updateWhatsAppLink(3, 'Kg Bag of Fully Colonized Substrate')">
-                <a id="buyNowLink3" href="https://wa.me/08068518634?text=I'm interested in buying 1Kg Bag of Fully Colonized Substrate for 700NGN" class="buy-now">Buy Now</a>
+                <a id="buyNowLink3" href="https://wa.me/+2348068518634?text=I'm interested in buying 1Kg Bag of Fully Colonized Substrate for 700NGN" class="buy-now">Buy Now</a>
             </div>
         </div>
         <div class="product-container">
@@ -58,7 +58,7 @@
                 <p class="product-price">3,500NGN</p>
                 <label for="quantity4">Quantity:</label>
                 <input type="number" id="quantity4" class="quantity-input" value="1" min="1" onchange="updateWhatsAppLink(4, 'Bag of Mushroom Seed/Spawn')">
-                <a id="buyNowLink4" href="https://wa.me/08068518634?text=I'm interested in buying 1 Bag of Mushroom Seed/Spawn for 3,500NGN" class="buy-now">Buy Now</a>
+                <a id="buyNowLink4" href="https://wa.me/+2348068518634?text=I'm interested in buying 1 Bag of Mushroom Seed/Spawn for 3,500NGN" class="buy-now">Buy Now</a>
             </div>
         </div>
         <div class="product-container">
@@ -71,7 +71,7 @@
                 <p class="product-price">3,000NGN</p>
                 <label for="quantity5">Quantity:</label>
                 <input type="number" id="quantity5" class="quantity-input" value="1" min="1" onchange="updateWhatsAppLink(5, '00grams of Dried Mushroom')">
-                <a id="buyNowLink5" href="https://wa.me/08068518634?text=I'm interested in buying  100grams of Dried Mushroom for 3,000NGN" class="buy-now">Buy Now</a>
+                <a id="buyNowLink5" href="https://wa.me/+2348068518634?text=I'm interested in buying  100grams of Dried Mushroom for 3,000NGN" class="buy-now">Buy Now</a>
             </div>
         </div>
     </div>
@@ -84,7 +84,7 @@
             const price = parseFloat(priceElement.getAttribute('data-price')); 
             const totalPrice = price * quantity;
             const message = `I'm interested in buying ${quantity} ${productName}${quantity > 1 ? 's' : ''} for ${totalPrice.toLocaleString()}NGN`;
-            const whatsappLink = `https://wa.me/08068518634?text=${encodeURIComponent(message)}`;
+            const whatsappLink = `https://wa.me/+2348068518634?text=${encodeURIComponent(message)}`;
             document.getElementById('buyNowLink' + productNumber).href = whatsappLink;
         }
     </script>

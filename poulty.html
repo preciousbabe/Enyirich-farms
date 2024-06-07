@@ -19,7 +19,7 @@
                 <p class="product-price">4,500NGN</p>
                 <label for="quantity1">Quantity:</label>
                 <input type="number" id="quantity1" class="quantity-input" value="1" min="1" onchange="updateWhatsAppLink(1, 'Kilo of Chicken')">
-                <a id="buyNowLink1" href="https://wa.me/08068518634?text=I'm interested in buying  1 Kilo of Chicken for 4,500NGN" class="buy-now">Buy Now</a>
+                <a id="buyNowLink1" href="https://wa.me/+2348068518634?text=I'm interested in buying  1 Kilo of Chicken for 4,500NGN" class="buy-now">Buy Now</a>
             </div>
         </div>
         <div class="product-container">
@@ -32,7 +32,7 @@
                 <p class="product-price">15,500NGN</p>
                 <label for="quantity2">Quantity:</label>
                 <input type="number" id="quantity2" class="quantity-input" value="1" min="1" onchange="updateWhatsAppLink(2, 'Fully Matured Fowl')">
-                <a id="buyNowLink2" href="https://wa.me/08068518634?text=I'm interested in buying  1 Fully Matured Fowl for 15,500NGN" class="buy-now">Buy Now</a>
+                <a id="buyNowLink2" href="https://wa.me/+2348068518634?text=I'm interested in buying  1 Fully Matured Fowl for 15,500NGN" class="buy-now">Buy Now</a>
             </div>
         </div>
         <div class="product-container">
@@ -45,7 +45,7 @@
                 <p class="product-price">4,000NGN</p>
                 <label for="quantity3">Quantity:</label>
                 <input type="number" id="quantity3" class="quantity-input" value="1" min="1" onchange="updateWhatsAppLink(3, 'Crate of Egg')">
-                <a id="buyNowLink3" href="https://wa.me/08068518634?text=I'm interested in buying  1 Crate of Egg for 4,000NGN" class="buy-now">Buy Now</a>
+                <a id="buyNowLink3" href="https://wa.me/+2348068518634?text=I'm interested in buying  1 Crate of Egg for 4,000NGN" class="buy-now">Buy Now</a>
             </div>
         </div>
     </div>
@@ -57,7 +57,7 @@
             const price = parseFloat(priceElement.getAttribute('data-price'));
             const totalPrice = price * quantity;
             const message = `I'm interested in buying ${quantity} ${productName}${quantity > 1 ? 's' : ''} for ${totalPrice.toLocaleString()}NGN`;
-            const whatsappLink = `https://wa.me/08068518634?text=${encodeURIComponent(message)}`;
+            const whatsappLink = `https://wa.me/+2348068518634?text=${encodeURIComponent(message)}`;
             document.getElementById('buyNowLink' + productNumber).href = whatsappLink;
         }
     </script>

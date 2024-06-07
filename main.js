@@ -129,7 +129,7 @@ function updateWhatsAppLink() {
     const whatsappMessage = `Hello, my name is ${name}. My email is ${email}. I have the following question: ${message}`;
     const encodedMessage = encodeURIComponent(whatsappMessage);
 
-    const whatsappLink = `https://wa.me/1234567890?text=${encodedMessage}`;
+    const whatsappLink = `https://wa.me/+2348068518634?text=${encodedMessage}`;
     document.getElementById('whatsappLink').href = whatsappLink;
 }
 
@@ -142,7 +142,7 @@ function MupdateWhatsAppLink(productNumber, productName) {
   const price = parseFloat(priceElement.getAttribute('data-price')); 
   const totalPrice = price * quantity;
   const message = `I'm interested in buying ${quantity} ${productName}${quantity > 1 ? 's' : ''} for ${totalPrice.toLocaleString()}NGN`;
-  const whatsappLink = `https://wa.me/08068518634?text=${encodeURIComponent(message)}`;
+  const whatsappLink = `https://wa.me/+2348068518634?text=${encodeURIComponent(message)}`;
   document.getElementById('buyNowLink' + productNumber).href = whatsappLink;
 }
 
@@ -154,7 +154,7 @@ function PupdateWhatsAppLink(productNumber, productName) {
   const price = parseFloat(priceElement.getAttribute('data-price'));
   const totalPrice = price * quantity;
   const message = `I'm interested in buying ${quantity} ${productName}${quantity > 1 ? 's' : ''} for ${totalPrice.toLocaleString()}NGN`;
-  const whatsappLink = `https://wa.me/08068518634?text=${encodeURIComponent(message)}`;
+  const whatsappLink = `https://wa.me/+2348068518634?text=${encodeURIComponent(message)}`;
   document.getElementById('buyNowLink' + productNumber).href = whatsappLink;
 }
 
@@ -165,6 +165,6 @@ function AupdateWhatsAppLink() {
   const totalPrice = price * quantity;
   const message = `I'm interested in buying ${quantity} Albino Rat${quantity > 1 ? 's' : ''} for ${totalPrice.toLocaleString()}NGN`;
   const encodedMessage = encodeURIComponent(message);
-  const whatsappLink = `https://wa.me/08068518634?text=${encodedMessage.replace(/%20/g, ' ')}`;
+  const whatsappLink = `https://wa.me/+2348068518634?text=${encodedMessage.replace(/%20/g, ' ')}`;
   document.getElementById('buyNowLink').href = whatsappLink;
 }
