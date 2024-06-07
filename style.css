@@ -302,7 +302,7 @@ button {
   background:#0d7a0d;
   padding: 50px;
   width: 40%;
-  height: 550px;
+  height: 630px;
   position: absolute;
   top: -14%;
   right: 10%;
@@ -660,11 +660,11 @@ footer {
   .wrapper,
   .wrap{
     margin-top:100px;
-    height: 520px;
+    height: 650px;
   }
-  .service{
+  /* .service{
     padding-bottom:20px;
-  }
+  } */
   .contact-container button{
     margin-top: -20px;
   }
@@ -735,7 +735,7 @@ footer {
   }
   .wrapper .text{
     padding: 45px 25px 50px;
-    height: 600px;
+    height: 740px;
   }
   .wrap .contact-container{
     height: 580px;
