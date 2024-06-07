@@ -134,12 +134,37 @@ function updateWhatsAppLink() {
 }
 
 
-// productwhatsapp
-function PupdateWhatsAppLink() {
-  const quantity = document.getElementById('quantity').value;
-  const price = priceElement.getAttribute('data-price');
+// mushroom
+function MupdateWhatsAppLink(productNumber, productName) {
+  const quantityInput = document.getElementById('quantity' + productNumber);
+  const quantity = quantityInput.value;
+  const priceElement = quantityInput.closest('.product-details');
+  const price = parseFloat(priceElement.getAttribute('data-price')); 
   const totalPrice = price * quantity;
-  const message = `I'm interested in buying ${quantity} Albino Rat${quantity > 1 ? 's' : ''} for ${totalPrice}NGN`;
+  const message = `I'm interested in buying ${quantity} ${productName}${quantity > 1 ? 's' : ''} for ${totalPrice.toLocaleString()}NGN`;
   const whatsappLink = `https://wa.me/08068518634?text=${encodeURIComponent(message)}`;
+  document.getElementById('buyNowLink' + productNumber).href = whatsappLink;
+}
+
+// poultytr
+function PupdateWhatsAppLink(productNumber, productName) {
+  const quantityInput = document.getElementById('quantity' + productNumber);
+  const quantity = quantityInput.value;
+  const priceElement = quantityInput.closest('.product-details');
+  const price = parseFloat(priceElement.getAttribute('data-price'));
+  const totalPrice = price * quantity;
+  const message = `I'm interested in buying ${quantity} ${productName}${quantity > 1 ? 's' : ''} for ${totalPrice.toLocaleString()}NGN`;
+  const whatsappLink = `https://wa.me/08068518634?text=${encodeURIComponent(message)}`;
+  document.getElementById('buyNowLink' + productNumber).href = whatsappLink;
+}
+
+// albino
+function AupdateWhatsAppLink() {
+  const quantity = document.getElementById('quantity').value;
+  const price = parseFloat(document.querySelector('.product-details').getAttribute('data-price'));
+  const totalPrice = price * quantity;
+  const message = `I'm interested in buying ${quantity} Albino Rat${quantity > 1 ? 's' : ''} for ${totalPrice.toLocaleString()}NGN`;
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappLink = `https://wa.me/08068518634?text=${encodedMessage.replace(/%20/g, ' ')}`;
   document.getElementById('buyNowLink').href = whatsappLink;
 }
